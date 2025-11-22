@@ -1,8 +1,4 @@
-# 📱 Calculadora Solar - Sistema Fotovoltaico
-
-![Version](https://img.shields.io/badge/version-1.0.0-green)
-![API](https://img.shields.io/badge/API-21%2B-brightgreen)
-![Language](https://img.shields.io/badge/language-Java-orange)
+# Calculadora Solar - Sistema Fotovoltaico
 
 Aplicación Android nativa para calcular y dimensionar sistemas solares fotovoltaicos basados en el consumo energético mensual.
 
