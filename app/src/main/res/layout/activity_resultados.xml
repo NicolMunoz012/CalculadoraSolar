@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_background"
+    tools:context=".ui.ResultadosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="@string/titulo_resultados"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <!-- Subtítulo con consumo -->
+        <TextView
+            android:id="@+id/tvSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_size_medium"
+            tools:text="Tu consumo: 450.00 kWh/mes" />
+
+        <!-- Card 1: Potencia del Sistema -->
+        <include
+            android:id="@+id/cardPotencia"
+            layout="@layout/item_resultado_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <!-- Card 2: Número de Paneles -->
+        <include
+            android:id="@+id/cardPaneles"
+            layout="@layout/item_resultado_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <!-- Card 3: Ahorro Mensual -->
+        <include
+            android:id="@+id/cardAhorro"
+            layout="@layout/item_resultado_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <!-- Card 4: Costo de Instalación -->
+        <include
+            android:id="@+id/cardCosto"
+            layout="@layout/item_resultado_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <!-- Card 5: Retorno de Inversión -->
+        <include
+            android:id="@+id/cardRetorno"
+            layout="@layout/item_resultado_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <!-- Card 6: Área Requerida -->
+        <include
+            android:id="@+id/cardArea"
+            layout="@layout/item_resultado_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large" />
+
+        <!-- Card del gráfico -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/corner_radius_large"
+            app:cardElevation="@dimen/elevation_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:text="@string/titulo_grafico"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <!-- Gráfico de barras -->
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCompartir"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/boton_compartir"
+                app:cornerRadius="@dimen/corner_radius_medium"
+                app:icon="@android:drawable/ic_menu_share"
+                app:iconGravity="start" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNuevoCalculo"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="@string/boton_nuevo_calculo"
+                app:cornerRadius="@dimen/corner_radius_medium"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconGravity="start" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

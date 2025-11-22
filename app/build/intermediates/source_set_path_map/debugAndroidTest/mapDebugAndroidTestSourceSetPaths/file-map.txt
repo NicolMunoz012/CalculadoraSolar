@@ -1,0 +1,6 @@
+com.solarcalculator.app.test.app-annotation-experimental-1.3.0-0 C:\Users\NICOL\.gradle\caches\9.0.0\transforms\4f8558e7566841325812dd2dc70f4991\transformed\annotation-experimental-1.3.0\res
+com.solarcalculator.app.test.app-core-1.5.0-1 C:\Users\NICOL\.gradle\caches\9.0.0\transforms\db3dfecc1c1b5721eb7fef9f14e337b4\transformed\core-1.5.0\res
+com.solarcalculator.app.test.app-androidTest-2 C:\Users\NICOL\Downloads\files\SolarCalculatorApp\SolarCalculatorApp\app\build\generated\res\resValues\androidTest\debug
+com.solarcalculator.app.test.app-mergeDebugAndroidTestResources-3 C:\Users\NICOL\Downloads\files\SolarCalculatorApp\SolarCalculatorApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.solarcalculator.app.test.app-mergeDebugAndroidTestResources-4 C:\Users\NICOL\Downloads\files\SolarCalculatorApp\SolarCalculatorApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.solarcalculator.app.test.app-debugAndroidTest-5 C:\Users\NICOL\Downloads\files\SolarCalculatorApp\SolarCalculatorApp\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

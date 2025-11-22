@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.solarcalculator.app-mergeDebugResources-30:/layout/activity_explicacion_calculos.xml",
+        "source": "com.solarcalculator.app-main-33:/layout/activity_explicacion_calculos.xml"
+    },
+    {
+        "merged": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-mergeDebugResources-30:\\layout\\activity_resultados.xml",
+        "source": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-main-33:\\layout\\activity_resultados.xml"
+    },
+    {
+        "merged": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-mergeDebugResources-30:\\layout\\item_resultado_card.xml",
+        "source": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-main-33:\\layout\\item_resultado_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-mergeDebugResources-30:\\layout\\activity_configuracion.xml",
+        "source": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-main-33:\\layout\\activity_configuracion.xml"
+    },
+    {
+        "merged": "com.solarcalculator.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.solarcalculator.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\NICOL\\.gradle\\daemon\\9.0.0\\com.solarcalculator.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.solarcalculator.app-mergeDebugResources-30:/layout/fragment_calculo_detalle.xml",
+        "source": "com.solarcalculator.app-main-33:/layout/fragment_calculo_detalle.xml"
+    }
+]

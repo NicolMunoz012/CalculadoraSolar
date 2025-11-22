@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_background"
+    tools:context=".ui.ConfiguracionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="@string/titulo_configuracion"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:text="@string/subtitulo_configuracion"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_size_medium" />
+
+        <!-- Card: Especificaciones del Panel -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/corner_radius_large"
+            app:cardElevation="@dimen/elevation_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium">
+
+                <!-- Título de la sección -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:text="@string/seccion_panel"
+                    android:textColor="@color/solar_green_primary"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <!-- Producción por panel -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilProduccionPanel"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:hint="@string/etiqueta_produccion_panel"
+                    app:boxStrokeColor="@color/solar_green_primary"
+                    app:hintTextColor="@color/solar_green_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etProduccionPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_produccion_panel"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Potencia nominal -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPotenciaPanel"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:hint="@string/etiqueta_potencia_panel"
+                    app:boxStrokeColor="@color/solar_green_primary"
+                    app:hintTextColor="@color/solar_green_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPotenciaPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_potencia_panel"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Área por panel -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilAreaPanel"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/etiqueta_area_panel"
+                    app:boxStrokeColor="@color/solar_green_primary"
+                    app:hintTextColor="@color/solar_green_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAreaPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_area_panel"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Card: Costos y Precios -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            app:cardCornerRadius="@dimen/corner_radius_large"
+            app:cardElevation="@dimen/elevation_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium">
+
+                <!-- Título de la sección -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:text="@string/seccion_costos"
+                    android:textColor="@color/solar_yellow_dark"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <!-- Precio del kWh -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPrecioKwh"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:hint="@string/etiqueta_precio_kwh"
+                    app:boxStrokeColor="@color/solar_green_primary"
+                    app:hintTextColor="@color/solar_green_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPrecioKwh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_precio_kwh"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Costo por panel -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCostoPanel"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/etiqueta_costo_panel"
+                    app:boxStrokeColor="@color/solar_green_primary"
+                    app:hintTextColor="@color/solar_green_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCostoPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_costo_panel"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Botones -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="@string/boton_guardar"
+            app:cornerRadius="@dimen/corner_radius_medium"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRestaurar"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/boton_restaurar"
+            app:cornerRadius="@dimen/corner_radius_medium"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconGravity="start" />
+    </LinearLayout>
+</ScrollView>

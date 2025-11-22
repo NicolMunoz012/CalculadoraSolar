@@ -1,0 +1,14 @@
+# Este archivo debe ser creado localmente y NO debe subirse a control de versiones
+# Copia este archivo como "local.properties" y actualiza la ruta a tu SDK de Android
+
+# Ubicación del Android SDK
+# Para Windows:
+# sdk.dir=C:\\Users\\TuUsuario\\AppData\\Local\\Android\\Sdk
+
+# Para Mac:
+# sdk.dir=/Users/TuUsuario/Library/Android/sdk
+
+# Para Linux:
+# sdk.dir=/home/tuusuario/Android/Sdk
+
+sdk.dir=/ruta/a/tu/Android/Sdk

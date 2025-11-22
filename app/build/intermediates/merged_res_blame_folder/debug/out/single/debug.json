@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.solarcalculator.app-merged_res-31:/layout_activity_configuracion.xml.flat",
+        "source": "com.solarcalculator.app-main-33:/layout/activity_configuracion.xml"
+    },
+    {
+        "merged": "com.solarcalculator.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.solarcalculator.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.solarcalculator.app-merged_res-31:/layout_item_resultado_card.xml.flat",
+        "source": "com.solarcalculator.app-main-33:/layout/item_resultado_card.xml"
+    },
+    {
+        "merged": "com.solarcalculator.app-merged_res-31:/layout_activity_resultados.xml.flat",
+        "source": "com.solarcalculator.app-main-33:/layout/activity_resultados.xml"
+    }
+]

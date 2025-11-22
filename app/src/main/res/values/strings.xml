@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">Calculadora Solar</string>
+
+    <!-- MainActivity -->
+    <string name="titulo_principal">Calculadora de Sistema Solar Fotovoltaico</string>
+    <string name="subtitulo_principal">Ingresa tu consumo mensual promedio</string>
+    <string name="etiqueta_consumo">Consumo mensual (kWh)</string>
+    <string name="hint_consumo">Ejemplo: 450</string>
+    <string name="boton_calcular">Calcular Sistema</string>
+    <string name="boton_configuracion">Configuración Avanzada</string>
+    <string name="boton_ayuda">¿Cómo funciona?</string>
+    
+    <!-- Validaciones y errores -->
+    <string name="error_campo_vacio">Por favor ingresa un valor</string>
+    <string name="error_valor_invalido">Ingresa un número válido mayor a 0</string>
+    <string name="error_valor_muy_grande">El valor es demasiado grande (máximo: 100,000 kWh)</string>
+    
+    <!-- ResultadosActivity -->
+    <string name="titulo_resultados">Resultados del Sistema Solar</string>
+    <string name="subtitulo_resultados">Tu consumo: %1$.2f kWh/mes</string>
+    
+    <string name="titulo_potencia">Potencia del Sistema</string>
+    <string name="valor_potencia">%1$.2f kW</string>
+    <string name="descripcion_potencia">Potencia total instalada</string>
+    
+    <string name="titulo_paneles">Número de Paneles</string>
+    <string name="valor_paneles">%1$d paneles</string>
+    <string name="valor_paneles_decimal">(Exacto: %1$.2f)</string>
+    <string name="descripcion_paneles">Redondeado hacia arriba</string>
+    
+    <string name="titulo_ahorro">Ahorro Mensual</string>
+    <string name="valor_ahorro">$%1$s COP</string>
+    <string name="descripcion_ahorro">Ahorro en factura eléctrica</string>
+    
+    <string name="titulo_costo">Costo de Instalación</string>
+    <string name="valor_costo">$%1$s COP</string>
+    <string name="descripcion_costo">Inversión inicial total</string>
+    
+    <string name="titulo_retorno">Retorno de Inversión</string>
+    <string name="valor_retorno">%1$.1f años</string>
+    <string name="descripcion_retorno">Tiempo de recuperación (payback)</string>
+    
+    <string name="titulo_area">Área Requerida</string>
+    <string name="valor_area">%1$d m²</string>
+    <string name="descripcion_area">Espacio necesario para paneles</string>
+    
+    <string name="titulo_grafico">Comparación Energética</string>
+    <string name="etiqueta_consumo_grafico">Consumo Mensual</string>
+    <string name="etiqueta_produccion_grafico">Producción Sistema</string>
+    
+    <string name="boton_compartir">Compartir Resultados</string>
+    <string name="boton_nuevo_calculo">Nuevo Cálculo</string>
+    
+    <!-- ConfiguracionActivity -->
+    <string name="titulo_configuracion">Configuración Avanzada</string>
+    <string name="subtitulo_configuracion">Ajusta las constantes del sistema</string>
+    
+    <string name="seccion_panel">Especificaciones del Panel</string>
+    <string name="etiqueta_produccion_panel">Producción por panel (kWh/día)</string>
+    <string name="hint_produccion_panel">2.2</string>
+    <string name="etiqueta_potencia_panel">Potencia nominal por panel (W)</string>
+    <string name="hint_potencia_panel">550</string>
+    <string name="etiqueta_area_panel">Área por panel (m²)</string>
+    <string name="hint_area_panel">2.0</string>
+    
+    <string name="seccion_costos">Costos y Precios</string>
+    <string name="etiqueta_precio_kwh">Precio del kWh (COP)</string>
+    <string name="hint_precio_kwh">926</string>
+    <string name="etiqueta_costo_panel">Costo de instalación por panel (COP)</string>
+    <string name="hint_costo_panel">2100000</string>
+    
+    <string name="boton_guardar">Guardar Cambios</string>
+    <string name="boton_restaurar">Restaurar Valores Predeterminados</string>
+    <string name="mensaje_guardado">Configuración guardada correctamente</string>
+    <string name="mensaje_restaurado">Valores predeterminados restaurados</string>
+    
+    <!-- Diálogo de ayuda -->
+    <string name="titulo_ayuda">¿Cómo funciona?</string>
+    <string name="contenido_ayuda">
+        <![CDATA[
+        <b>Calculadora Solar Fotovoltaica</b><br/><br/>
+        
+        Esta aplicación te ayuda a dimensionar un sistema solar para tu hogar o negocio.<br/><br/>
+        
+        <b>Valores por defecto:</b><br/>
+        • Producción por panel: 2.2 kWh/día<br/>
+        • Potencia nominal: 550 W<br/>
+        • Precio kWh: $926 COP<br/>
+        • Costo por panel: $2,100,000 COP<br/>
+        • Área por panel: 2 m²<br/><br/>
+        
+        <b>Cómo usar:</b><br/>
+        1. Ingresa tu consumo mensual promedio en kWh (lo encuentras en tu factura)<br/>
+        2. Presiona "Calcular Sistema"<br/>
+        3. Revisa los resultados y gráficos<br/><br/>
+        
+        Puedes ajustar las constantes en "Configuración Avanzada" según tu región y tipo de panel.
+        ]]>
+    </string>
+    <string name="boton_entendido">Entendido</string>
+    
+    <!-- Compartir -->
+    <string name="texto_compartir">
+        📊 Resultados de mi Sistema Solar\n\n
+        💡 Consumo mensual: %1$.2f kWh\n
+        ⚡ Potencia del sistema: %2$.2f kW\n
+        🔆 Paneles necesarios: %3$d\n
+        💰 Ahorro mensual: $%4$s COP\n
+        💵 Inversión total: $%5$s COP\n
+        📅 Retorno de inversión: %6$.1f años\n
+        📏 Área requerida: %7$d m²\n\n
+        Calculado con Calculadora Solar
+    </string>
+    <string name="compartir_via">Compartir resultados via...</string>
+</resources>
